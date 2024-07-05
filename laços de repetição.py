@@ -1,21 +1,12 @@
-#x = 0 
-
-#while x < 5:
- #nome = input ('Qual é o seu nome')
- 
- #x=x+1
-
-
 x = 0
-
 animais = []
 
 while x < 5:
+    animal = input('Qual é o seu animal? ')
+    if animal.lower().startswith('d'):  
+        animais.append(animal)  
+        x = x + 1
+    else:
+        print("animal que comece com a letra 'D'.")
 
-animais= input ('Qual é o seu animais')
-
-animais.append()
-
-x=x+1
-
-print(animais)
+print(animais) 
